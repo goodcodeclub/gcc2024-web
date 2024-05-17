@@ -103,17 +103,17 @@ export default function Page() {
         {
             name: "Texas A&M University",
             url: "https://www.tamu.edu",
-            role: "Serious game design"
+            role: "Serious games"
         },
         {
             name: "OCAD University",
             url: "https://ocadu.ca",
-            role: "Visualization research"
+            role: "Data visualization"
         },
         {
             name: "University of Toronto",
             url: "https://www.utoronto.ca/",
-            role: "AI training interface"
+            role: "AI training"
         },
         // {
         //     name: "Woodbridge School of Dance",
@@ -135,7 +135,7 @@ export default function Page() {
         },
         {
             name: "Adhoc support",
-            role: "Support and monitoring"
+            role: "Support / monitoring"
         },
         {
             name: "Web hosting",
@@ -268,8 +268,8 @@ export default function Page() {
                                             {
                                                 to.list.sort((a, b) => a.fname.localeCompare(b.fname)).map((po, pi) => {
 
-                                                    return <div className="d-block align-items-center lh-sm small " key={pi}>
-                                                        <a href={"https://linkedin.com/in/" + po.linkedin} target="_blank" className="opacity-50 overflow-hidden w-100" style={{ whiteSpace: "nowrap", textOverflow: "ellipsis" }}>{po.fname} {po.lname}</a>
+                                                    return <div className="d-block align-items-center lh-sm small overflow-hidden opacity-50" style={{ whiteSpace: "nowrap", textOverflow: "ellipsis" }} key={pi}>
+                                                        <a href={"https://linkedin.com/in/" + po.linkedin} target="_blank" className=" overflow-hidden w-100" style={{ whiteSpace: "nowrap", textOverflow: "ellipsis" }}>{po.fname} {po.lname}</a>
                                                         {/* <hr className="border-white border border-bottom-0 border-1 m-0 mx-2 w-100 opacity-25" /> */}
                                                         {/* <p className="m-0 small ms-auto opacity-50 fw-light" style={{ whiteSpace: "nowrap" }}>{po.role}</p> */}
                                                     </div>
