@@ -45,7 +45,7 @@ export default function Page() {
 
 
         {
-            name: "Emmy® Awards",
+            name: "Emmy Awards",
             url: "https://theemmys.tv/",
             role: "Industry recognition"
         },
