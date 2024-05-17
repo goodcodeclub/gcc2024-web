@@ -8,7 +8,7 @@ export default function Nav() {
             <div className="container bg-transparent d-lg-flex d-flex align-items-center">
                 <a className="active text-dark d-flex justify-content-center align-items-center text-decoration-none" href="#">
                     {/* <img src="/images/gcc.png" style={{height:"2rem"}} className="me-3" /> */}
-                    <img src='https://goodcodeclub.com/images/gcc_alt.png' className="me-3" style={{height:"2rem", transformOrigin:"center", transform:""}} />
+                    <img src='https://legacy.goodcodeclub.com/images/gcc_alt.png' className="me-3" style={{height:"2rem", transformOrigin:"center", transform:""}} />
 
                         <div className="">
                             <h4 className="mb-0 fw-semibold lh-1 text-white">GoodCodeClub</h4>

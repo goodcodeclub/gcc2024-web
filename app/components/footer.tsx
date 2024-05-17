@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="mx-auto pt-51 small">
 
                 <div className="d-flex justify-content-center align-items-center">
-                    <img src="https://goodcodeclub.com/images/gcc_alt.png" style={{ height: "1.5rem" }} className="me-2" />
+                    <img src="https://legacy.goodcodeclub.com/images/gcc_alt.png" style={{ height: "1.5rem" }} className="me-2" />
                     <span className=" fw-semibold">GoodCodeClub</span>
                 </div>
 
