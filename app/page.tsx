@@ -157,8 +157,7 @@ export default function Page() {
 
                 <div className="row gx-lg-5">
 
-
-                    <div className="col-lg">
+                    <div className="col-xl-4 col-lg-6">
 
                         <div className="mb-4 reveal2">
 
@@ -191,105 +190,116 @@ export default function Page() {
 
 
 
-
-                    </div>
-
-                    <div className="col-lg mt-lg-0 mt-4">
-
-
-                        <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-2">Services</h4>
-                        <div className="mb-4 reveal2">
-
-                            {services.map((po, pi) => {
-
-                                return <div className="d-flex align-items-center lh-sm" key={pi}>
-                                    <span className="d-block" style={{ whiteSpace: "nowrap" }}>{po.name}</span>
-                                    <hr className="border-white border border-bottom-0 border-1 m-0 mx-2 w-100 opacity-25" />
-                                    <p className="m-0 small ms-auto opacity-50 fw-light" style={{ whiteSpace: "nowrap" }}>{po.role}</p>
-                                </div>
-
-                            })}
-
-                        </div>
-
-                        <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-2">Current projects</h4>
-
-                        <div className="row mb-4 align-items-center gx-3">
-                            <div className="col-lg-2 col-2">
-                                <a href="https://htmlcats.com" target="_blank">
-                                    <img src="./htmlcats.svg" className="w-100 d-block" />
-                                </a>
-                            </div>
-                            <div className="col-lg-2 col-2">
-                                <a href="https://flexboxtoronto.com" target="_blank">
-                                    <img src="https://flexboxtoronto.com/images/logo_white.svg" className="w-100 d-block" />
-                                </a>
-                            </div>
-                            <div className="col-lg-2 col-2">
-                                <a href="https://lectureapp.io" target="_blank">
-                                    <img src="./saboten.svg" className="w-100 d-block" />
-                                </a>
-                            </div>
-                        </div>
-                        <div className="">
-                        </div>
-
-                        <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-2">Contact Us</h4>
-
-                        <p className="m-0">
-                            Chris Kim, PhD <sup className={noto.className}>김경윤</sup><br />
-                            Director<br />
-                            <a href="mailto:chris@goodcodeclub.com">chris@goodcodeclub.com</a>
-                        </p>
-
-
                     </div>
 
 
-                    <div className="col-lg-4 mt-lg-0 mt-4">
+                    <div className="col-xl-8 col-lg-6">
 
-                        <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-2">Our friends</h4>
-
-                        <p className="small">We made many talented friends along the way, and we think you'll like to meet them too.</p>
-
-                        {mounted == true &&
-
-                            <div className="small row">
+                        <div className="row gx-lg-5">
 
 
+                            <div className="col-xl-6 mt-lg-0 mt-4">
 
-                                {TalentList().map((to, ti) => {
 
-                                    return <>
+                                <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-2">Services</h4>
+                                <div className="mb-4 reveal2">
 
-                                        <div className="col-6 mb-2">
+                                    {services.map((po, pi) => {
 
-                                            <><span className="text-uppercase">{to.name}</span></>
-                                            {
-                                                to.list.sort((a, b) => a.fname.localeCompare(b.fname)).map((po, pi) => {
-
-                                                    return <div className="d-block align-items-center lh-sm small overflow-hidden opacity-50" style={{ whiteSpace: "nowrap", textOverflow: "ellipsis" }} key={pi}>
-                                                        <a href={"https://linkedin.com/in/" + po.linkedin} target="_blank" className=" overflow-hidden w-100" style={{ whiteSpace: "nowrap", textOverflow: "ellipsis" }}>{po.fname} {po.lname}</a>
-                                                        {/* <hr className="border-white border border-bottom-0 border-1 m-0 mx-2 w-100 opacity-25" /> */}
-                                                        {/* <p className="m-0 small ms-auto opacity-50 fw-light" style={{ whiteSpace: "nowrap" }}>{po.role}</p> */}
-                                                    </div>
-
-                                                })
-                                            }
-
+                                        return <div className="d-flex align-items-center lh-sm" key={pi}>
+                                            <span className="d-block" style={{ whiteSpace: "nowrap" }}>{po.name}</span>
+                                            <hr className="border-white border border-bottom-0 border-1 m-0 mx-2 w-100 opacity-25" />
+                                            <p className="m-0 small ms-auto opacity-50 fw-light" style={{ whiteSpace: "nowrap" }}>{po.role}</p>
                                         </div>
 
-                                    </>
+                                    })}
 
+                                </div>
 
-                                })}
+                                <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-2">Current projects</h4>
+
+                                <div className="row mb-4 align-items-center gx-3">
+                                    <div className="col-lg-2 col-2">
+                                        <a href="https://htmlcats.com" target="_blank">
+                                            <img src="./htmlcats.svg" className="w-100 d-block" />
+                                        </a>
+                                    </div>
+                                    <div className="col-lg-2 col-2">
+                                        <a href="https://flexboxtoronto.com" target="_blank">
+                                            <img src="https://flexboxtoronto.com/images/logo_white.svg" className="w-100 d-block" />
+                                        </a>
+                                    </div>
+                                    <div className="col-lg-2 col-2">
+                                        <a href="https://lectureapp.io" target="_blank">
+                                            <img src="./saboten.svg" className="w-100 d-block" />
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className="">
+                                </div>
+
+                                <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-2">Contact Us</h4>
+
+                                <p className="m-0">
+                                    Chris Kim, PhD <sup className={noto.className}>김경윤</sup><br />
+                                    Director<br />
+                                    <a href="mailto:chris@goodcodeclub.com">chris@goodcodeclub.com</a>
+                                </p>
+
 
                             </div>
-                        }
-
-                        <p className="small m-0  mt-2 text-start fw-light"><small className="d-block">Did we forget about you? <a href="mailto:chris@goodcodeclub.com">Kindly remind us</a>.</small></p>
 
 
+                            <div className="col-xl-6 mt-xl-0 mt-4">
+
+                                <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-2">Our friends</h4>
+
+                                <p className="small">We made many talented friends along the way, and we think you'll like to meet them too.</p>
+
+                                {mounted == true &&
+
+                                    <div className="small row">
+
+
+
+                                        {TalentList().map((to, ti) => {
+
+                                            return <>
+
+                                                <div className="col-6 mb-2">
+
+                                                    <><span className="text-uppercase">{to.name}</span></>
+                                                    {
+                                                        to.list.sort((a, b) => a.fname.localeCompare(b.fname)).map((po, pi) => {
+
+                                                            return <div className="d-block align-items-center lh-sm small overflow-hidden opacity-50" style={{ whiteSpace: "nowrap", textOverflow: "ellipsis" }} key={pi}>
+                                                                <a href={"https://linkedin.com/in/" + po.linkedin} target="_blank" className=" overflow-hidden w-100" style={{ whiteSpace: "nowrap", textOverflow: "ellipsis" }}>{po.fname} {po.lname}</a>
+                                                                {/* <hr className="border-white border border-bottom-0 border-1 m-0 mx-2 w-100 opacity-25" /> */}
+                                                                {/* <p className="m-0 small ms-auto opacity-50 fw-light" style={{ whiteSpace: "nowrap" }}>{po.role}</p> */}
+                                                            </div>
+
+                                                        })
+                                                    }
+
+                                                </div>
+
+                                            </>
+
+
+                                        })}
+
+                                    </div>
+                                }
+
+                                <p className="small m-0  mt-2 text-start fw-light"><small className="d-block">Did we forget about you? <a href="mailto:chris@goodcodeclub.com">Kindly remind us</a>.</small></p>
+
+
+
+                            </div>
+
+
+
+                        </div>
 
                     </div>
 
