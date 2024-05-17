@@ -254,7 +254,7 @@ export default function Page() {
 
                                 <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-2">Our friends</h4>
 
-                                <p className="small">We made many talented friends along the way, and we think you'll like to meet them too.</p>
+                                <p className="small m-0 mb-2">We made many talented friends along the way, and we think you'll like to meet them too.</p>
 
                                 {mounted == true &&
 
