@@ -149,9 +149,9 @@ export default function Page() {
 
     ]
 
-    return <div className="my-auto py-5 font-neodgm1 text-uppercase1" ref={refToComponent}>
+    return <div className="my-auto py-lg-5 py-4 font-neodgm1 text-uppercase1" ref={refToComponent}>
 
-        <div className="reveal1 mb-5">
+        <div className="reveal1 mb-lg-5 mb-4">
             <Nav />
         </div>
 

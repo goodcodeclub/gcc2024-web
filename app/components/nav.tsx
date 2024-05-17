@@ -3,9 +3,9 @@ import React from "react";
 export default function Nav() {
     return <>
 
-        <div className=" text-dark1 sticky-top bg-white1 border-muted">
+        <div className=" text-dark1 sticky-top bg-white1 border-muted px-lg-0 px-3">
 
-            <div className="container bg-transparent d-lg-flex d-block align-items-center">
+            <div className="container bg-transparent d-lg-flex d-flex align-items-center">
                 <a className="active text-dark d-flex justify-content-center align-items-center text-decoration-none" href="#">
                     {/* <img src="/images/gcc.png" style={{height:"2rem"}} className="me-3" /> */}
                     <img src='https://goodcodeclub.com/images/gcc_alt.png' className="me-3" style={{height:"2rem", transformOrigin:"center", transform:""}} />
@@ -26,14 +26,14 @@ export default function Nav() {
 
                 </div>
 
-                <div className="ms-auto d-lg-flex d-flex text-center mt-lg-0 mt-1 justify-content-center align-items-center">
+                <div className="ms-auto d-lg-flex d-flex text-center mt-lg-0 mt-0 justify-content-center align-items-center">
 
 
-                    <div className="text-lg-end text-center small fs-5 d-lg-flex d-block align-items-center">
+                    <div className="text-lg-end text-center small fs-5 d-lg-flex d-flex align-items-center">
 
                         <a className="ms-0" target="_blank" href="https://flexboxtoronto.com"><i className="bi bi-geo-alt-fill"></i></a>
-                        <a className="ms-lg-2 ms-1" target="_blank" href="https://www.linkedin.com/company/goodcodeclub/"><i className="bi bi-linkedin"></i></a>
-                        <a className="ms-lg-2 ms-1" href="mailto:chris@goodcodeclub.com"><i className="bi bi-envelope-fill"></i></a>
+                        <a className="ms-lg-2 ms-2" target="_blank" href="https://www.linkedin.com/company/goodcodeclub/"><i className="bi bi-linkedin"></i></a>
+                        <a className="ms-lg-2 ms-2" href="mailto:chris@goodcodeclub.com"><i className="bi bi-envelope-fill"></i></a>
                     </div>
 
 
