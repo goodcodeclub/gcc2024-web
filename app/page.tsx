@@ -2,11 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import Nav from "./components/nav";
-import Hero from "./components/hero";
-import Features from "./components/features";
-import Benefits from "./components/benefits";
-import Testimonials from "./components/testimonials";
-import Callout from "./components/callout";
 import Footer from "./components/footer";
 import { Noto_Sans_KR } from 'next/font/google'
 import TalentList from "./components/talent";
