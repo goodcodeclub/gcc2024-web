@@ -1,0 +1,76 @@
+@import url('https://goodcodeclub.com/gcc2021/fonts/gotham.css');
+@import url('//cdn.jsdelivr.net/gh/neodgm/neodgm-webfont@latest/neodgm/style.css');
+
+.font-neodgm {
+    font-family: 'NeoDunggeunmo' !important;
+}
+
+.font-neodgm-code {
+    font-family: 'NeoDunggeunmo Code' !important;
+}
+
+html.sr .load-hidden, .reveal {
+    visibility: hidden;
+}
+
+html
+{
+    min-height: 100vh;
+}
+
+body {
+    min-height: 100vh;
+	font-family: "GothamPro" !important;
+}
+
+a
+{
+    color:inherit !important 
+}
+
+:root {
+    --bs-primary: #00789f !important;
+    --bs-primary-rgb: 0, 120, 159 !important;
+    --secondary-color: #4E5437;
+    --primary-darker-color: #612B12;
+    --base-color: #FFFAF3;
+}
+
+.bg-primary
+{
+    /* background-color: var(--primary-color) !important; */
+}
+/* 
+
+.primary-background {
+    background-color: var(--primary-color);
+    color: var(--base-color);
+}
+
+.base-background {
+    background-color: var(--base-color);
+}
+
+.primary-button {
+    background-color: var(--primary-color);
+    border-radius: 40px;
+    border-color: var(--base-color);
+    color: var(--base-color);
+}
+
+.primary-button:hover {
+    background-color: var(--primary-darker-color);
+    border-color: var(--primary-darker-color);
+}
+
+.base-button {
+    background-color: var(--base-color);
+    border-radius: 40px;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.base-button:hover {
+    background-color: var(--primary-darker-color);
+    border-color: var(--primary-darker-color);
+} */
