@@ -1,1 +1,1 @@
-self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/home/runner/work/gcc_web/gcc_web/app/page":["static/media/a15f2fce4b98b461-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';
+self.__NEXT_FONT_MANIFEST='{"pages":{},"app":{"/home/runner/work/gcc2024-web/gcc2024-web/app/page":["static/media/a15f2fce4b98b461-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}';

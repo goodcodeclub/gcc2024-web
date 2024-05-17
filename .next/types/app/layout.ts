@@ -1,4 +1,4 @@
-// File: /home/runner/work/gcc_web/gcc_web/app/layout.tsx
+// File: /home/runner/work/gcc2024-web/gcc2024-web/app/layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
