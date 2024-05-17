@@ -217,7 +217,7 @@ export default function Page() {
                         <div className="row mb-4 align-items-center gx-3">
                             <div className="col-lg-2 col-2">
                                 <a href="https://htmlcats.com" target="_blank">
-                                    <img src="/htmlcats.svg" className="w-100 d-block" />
+                                    <img src="./htmlcats.svg" className="w-100 d-block" />
                                 </a>
                             </div>
                             <div className="col-lg-2 col-2">
@@ -227,7 +227,7 @@ export default function Page() {
                             </div>
                             <div className="col-lg-2 col-2">
                                 <a href="https://lectureapp.io" target="_blank">
-                                    <img src="/saboten.svg" className="w-100 d-block" />
+                                    <img src="./saboten.svg" className="w-100 d-block" />
                                 </a>
                             </div>
                         </div>
