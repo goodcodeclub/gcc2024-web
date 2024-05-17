@@ -76,21 +76,21 @@ jobs:
           git add .next -f
           git commit -m "Build generated"
           git push    
-      - name: Static HTML export with Next.js
-       run: ${{ steps.detect-package-manager.outputs.runner }} next export
-      - name: Upload artifact
-      uses: actions/upload-pages-artifact@v1
-      with:
-      path: ./out
+      #- name: Static HTML export with Next.js
+      #  run: ${{ steps.detect-package-manager.outputs.runner }} next export
+      #- name: Upload artifact
+      # uses: actions/upload-pages-artifact@v1
+      # with:
+      # path: ./out
 
-  Deployment job
-  deploy:
-   environment:
-     name: github-pages
-     url: ${{ steps.deployment.outputs.page_url }}
-   runs-on: ubuntu-latest
-   needs: build
-   steps:
-     - name: Deploy to GitHub Pages
-       id: deployment
-       uses: actions/deploy-pages@v2
+  # Deployment job
+  #deploy:
+  #  environment:
+  #    name: github-pages
+  #    url: ${{ steps.deployment.outputs.page_url }}
+  #  runs-on: ubuntu-latest
+  #  needs: build
+  #  steps:
+  #    - name: Deploy to GitHub Pages
+  #      id: deployment
+  #      uses: actions/deploy-pages@v2
