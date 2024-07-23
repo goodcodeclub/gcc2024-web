@@ -230,7 +230,7 @@ export default function Page() {
                                         </a>
                                     </div>
                                     <div className="col-lg-2 col-2">
-                                        <a href="https://lectureapp.io" target="_blank">
+                                        <a href="https://letterform.app" target="_blank">
                                             <img src="./saboten.svg" className="w-100 d-block" />
                                         </a>
                                     </div>
