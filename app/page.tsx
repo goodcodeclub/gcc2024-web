@@ -241,7 +241,7 @@ export default function Page() {
                                 <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-2">Contact Us</h4>
 
                                 <p className="m-0">
-                                    Chris Kim, PhD <sup className={noto.className}>김경윤</sup><br />
+                                    <a href="https://chriskkim.com/" target="_blank">Chris Kim, PhD</a> <sup className={noto.className}>김경윤</sup><br />
                                     Director<br />
                                     <a href="mailto:chris@goodcodeclub.com">chris@goodcodeclub.com</a>
                                 </p>

@@ -13,6 +13,27 @@ export default function TalentList() {
             "name": "Technology",
             "teaser": "They are often the first ones to learn about and embrace the latest emerging technologies.",
             "list": [
+                {
+                    "fname": "Kyle",
+                    "lname": "Yang",
+                    "linkedin": "kyleyangdesigner",
+                    "profile": "https://media.licdn.com/dms/image/C5603AQFirRC89RpFAw/profile-displayphoto-shrink_100_100/0/1577074525519?e=1691625600&v=beta&t=aNadg1vovh41qRYplhhqHul2tRpOkW7ZGwON1NNG_YI",
+                    "title": "Front-end Developer | Shopify Developer",
+                    "websites": [
+                        "http://eamponsah.com"
+                    ]
+                },
+                
+                {
+                    "fname": "I-Le",
+                    "lname": "Chang",
+                    "linkedin": "i-le-chang-92a9961a7",
+                    "profile": "https://media.licdn.com/dms/image/C5603AQFirRC89RpFAw/profile-displayphoto-shrink_100_100/0/1577074525519?e=1691625600&v=beta&t=aNadg1vovh41qRYplhhqHul2tRpOkW7ZGwON1NNG_YI",
+                    "title": "Front-end Developer | Shopify Developer",
+                    "websites": [
+                        "http://eamponsah.com"
+                    ]
+                },
 
                 {
                     "fname": "Emmanuel",
@@ -115,6 +136,14 @@ export default function TalentList() {
             "teaser": "They turn supporting research into visually striking, thought-provoking products.",
             "list": [
 
+                {
+                    "fname": "Kana",
+                    "lname": "Yamasaki",
+                    "linkedin": "kana-yamasaki",
+                    "profile": "https://media.licdn.com/dms/image/C4E03AQHN1gM5ciNk5A/profile-displayphoto-shrink_100_100/0/1604376378239?e=1691625600&v=beta&t=C4NtaizilVvJzZimToljO-_Cs__Q8LZyz2B1kzG5-Fw",
+                    "title": "Data PM @ Dropbox",
+                    "websites": []
+                },
 
                 {
                     "fname": "Kawai",
