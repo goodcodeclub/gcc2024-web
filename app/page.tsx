@@ -256,7 +256,6 @@ export default function Page() {
 
                                 <p className="small m-0 mb-2">We made many talented friends along the way, and we think you'll like to meet them too.</p>
 
-                                {mounted == true &&
 
                                     <div className="small row">
 
@@ -289,7 +288,6 @@ export default function Page() {
                                         })}
 
                                     </div>
-                                }
 
                                 <p className="small m-0  mt-2 text-start fw-light"><small className="d-block">Did we forget about you? <a href="mailto:chris@goodcodeclub.com">Kindly remind us</a>.</small></p>
 
