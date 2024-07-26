@@ -175,7 +175,7 @@ export default function Page() {
 
                         </div>
 
-                        <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-2">Past Collaborators</h4>
+                        <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-2">Collaborators</h4>
 
 
                         {projects.map((po, pi) => {
@@ -240,10 +240,10 @@ export default function Page() {
 
                                 <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-2">Contact Us</h4>
 
-                                <p className="m-0">
-                                    <a href="https://chriskkim.com/" target="_blank">Chris Kim, PhD</a> <sup className={noto.className}>김경윤</sup><br />
-                                    Director<br />
-                                    <a href="mailto:chris@goodcodeclub.com">chris@goodcodeclub.com</a>
+                                <p className="m-0 lh-sm">
+                                    <i className="bi bi-person"></i>  <a href="https://chriskkim.com/" target="_blank">Chris Kim, PhD</a> <sup className={noto.className}>김경윤</sup><br />
+                                    <i className="bi bi-envelope"></i>  <a href="mailto:chris@goodcodeclub.com">chris@goodcodeclub.com</a><br/>
+                                    <i className="bi bi-calendar2"></i> <a href="https://chriskkim.youcanbook.me/" target="_blank">Book a meeting</a>
                                 </p>
 
 
