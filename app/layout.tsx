@@ -1,7 +1,10 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap-icons/font/bootstrap-icons.min.css";
 import './global.css';
+import { usePathname } from "next/navigation";
 
 
 const gaTag = `
@@ -17,10 +20,43 @@ export default function RootLayout({
 }: {
     children: React.ReactNode
 }) {
+
+    const pathname = usePathname();
+
+    const [title, setTitle] = useState("GoodCodeClub - digital media, web development, prototyping - Toronto, Canada");
+
+    if (pathname.indexOf("/blog/") === 0) {
+
+
+        const loadArticle = async () => {
+
+
+            const pathArray = pathname.split("/");
+
+            if (pathArray.length > 2) {
+
+                const result = await fetch("https://api.letterform.app/public/pages/get?project_slug=goodcodeclub-blog&article_slug=" + pathArray[2]);
+                const data = await result.json();
+
+                if (data.data) {
+
+                    setTitle(data.data.title + " - " + "GoodCodeClub - Toronto, Canada");
+
+                }
+
+            }
+
+
+        }
+        loadArticle();
+
+
+    }
+
     return (
         <html lang="en">
             <head>
-                <title>GoodCodeClub - digital media, web development, prototyping - Toronto, Canada</title>
+                <title>{title}</title>
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LYZDGJWZ8G"></script>
                 <script dangerouslySetInnerHTML={{ __html: gaTag }}></script>
             </head>
