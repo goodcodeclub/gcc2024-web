@@ -25,6 +25,7 @@ export default function RootLayout({
 
     const [title, setTitle] = useState("GoodCodeClub - digital media, web development, prototyping - Toronto, Canada");
 
+    
     if (pathname.indexOf("/blog/") === 0) {
 
 
@@ -57,6 +58,7 @@ export default function RootLayout({
         <html lang="en">
             <head>
                 <title>{title}</title>
+                <meta name="title" property="og:title" content={title}></meta>
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LYZDGJWZ8G"></script>
                 <script dangerouslySetInnerHTML={{ __html: gaTag }}></script>
             </head>
