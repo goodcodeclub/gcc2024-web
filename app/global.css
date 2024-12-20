@@ -15,11 +15,11 @@ html.sr .load-hidden, .reveal {
 
 html
 {
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 body {
-    min-height: 100vh;
+    /* min-height: 100vh; */
 	font-family: "GothamPro" !important;
 }
 
@@ -74,3 +74,112 @@ a
     background-color: var(--primary-darker-color);
     border-color: var(--primary-darker-color);
 } */
+
+#view
+{
+    font-size:12px !important
+}
+
+#view h1
+{
+    font-size: 1.5rem;
+}
+
+#view h2
+{
+    font-size: 1.4rem;
+}
+
+#view h3
+{
+    font-size: 1.3rem;
+}
+
+#view h4
+{
+    font-size: 1.2rem;
+}
+
+#view h5
+{
+    font-size: 1.1rem;
+}
+
+#view h6
+{
+    font-size: 1.0rem;
+}
+
+#view h1, #view h2, #view h3, #view h4, #view h5, #view h6
+{
+    font-weight: 600;
+    display:inline-flex
+}
+
+#view p,
+#view ul,
+#view ol
+{
+	font-size:0.9rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#view a
+{
+    /* text-decoration: none; */
+	/* border-bottom: 1px dotted #F04A00; */
+    /* white-space: nowrap;     */
+    font-weight: 500;
+}
+
+#view a[href='#']
+{
+    /* color: #999; */
+    /* white-space: nowrap;     */
+}
+
+#view pre>code
+{
+	padding:1em;
+	background-color: #eee;
+	display: block;
+    overflow: auto;
+}
+
+#view img
+{
+	/* width:100%; */
+	/* max-width:100%; */
+}
+
+#view hr
+{
+	margin-top:2rem !important;
+	margin-bottom:2rem !important;
+}
+
+#view blockquote
+{
+	padding:1rem;
+    background-color: rgba(255,255,255,0.15);
+	display: block;	
+}
+
+
+#view iframe
+{
+	margin-bottom:1rem;
+	display: block;	
+}
+
+#view *:last-child
+{
+    margin-bottom: 0 !important;
+}
+
+
+#view blockquote p:last-child
+{
+	margin-bottom: 0;
+}

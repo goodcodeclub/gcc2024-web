@@ -5,6 +5,9 @@ import Nav from "./components/nav";
 import Footer from "./components/footer";
 import { Noto_Sans_KR } from "next/font/google";
 import TalentList from "./components/talent";
+import YAML from 'yaml'
+import Link from "next/link";
+import { Sidebar } from "./components/sidebar";
 
 const noto = Noto_Sans_KR({ subsets: ["latin"] });
 
@@ -138,9 +141,56 @@ export default function Page() {
     },
   ];
 
+  const [articles, setArticles] = useState([]);
+
+  const loadBlog = async () => {
+
+    const result = await fetch("https://api.letterform.app/public/pages/list?project_slug=goodcodeclub-blog");
+    const data = await result.json();
+
+    setArticles(data.data);
+
+
+  }
+
+  useEffect(() => {
+
+    loadBlog();
+
+
+  }, [])
+
+  const internal = [
+
+    {
+      image: "./htmlcats.svg",
+      url: "https://htmlcats.com",
+      name: "HTMLCATS",
+      description: "Free web development tutorials"
+    },
+    {
+      image: "https://flexboxtoronto.com/images/logo_white.svg",
+      url: "https://flexboxtoronto.com",
+      name: "Flexbox",
+      description: "Flexible studio rental"
+    },
+    {
+      image: "./saboten.svg",
+      url: "https://letterform.app",
+      name: "Letterform",
+      description: "Minimalist publishing platform"
+    },
+    {
+      image: "./kindervillage.svg",
+      url: "https://kindervillage.ca",
+      name: "Kindervillage",
+      description: "Child care resources and solutions"
+    },
+  ]
+
   return (
     <div
-      className="my-auto py-lg-5 py-4 font-neodgm1 text-uppercase1"
+      className="my-auto0 py-lg-4 py-4 font-neodgm1 text-uppercase1"
       ref={refToComponent}
     >
       <div className="reveal1 mb-lg-5 mb-4">
@@ -149,31 +199,31 @@ export default function Page() {
 
       <div className="px-lg-0 px-3">
         <div className="container">
-          <div className="row gx-lg-5">
-            <div className="col-xl-4 col-lg-6">
+          <div className="row gx-lg-5 align-items-stretch">
+            <div className="col-xl-8 col-lg-7">
               <div className="mb-4 reveal2">
                 <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-2">
                   About us
                 </h4>
 
-                <p className="m-0 mb-2 fw-semibold opacity-75">
+                <p className="m-0 mb-2">
                   The web is a beautiful mess.
                 </p>
 
-                <p className="m-0 mb-2">
+                <p className="m-0 mb-2 small">
                   Here at GoodCodeClub, we vividly remember the early days of
                   the World Wide Web, where we celebrated every online
                   interaction on painfully slow dial-up networks.
                 </p>
 
-                <p className="m-0 mb-2">
+                <p className="m-0 mb-2 small">
                   Fast forward to today, where every web project feels heavier,
                   its production process more convoluted than ever. The
                   cyberspace certainly is more crowded and hectic now, but your
                   codebase doesn't have to be.
                 </p>
 
-                <p className="m-0 mb-2">
+                <p className="m-0 mb-2 small">
                   We sift through all the fluff and get down to the substance.
                   We build grounded solutions to your creative and business
                   challenges.
@@ -181,6 +231,35 @@ export default function Page() {
 
                 <p className="m-0">Good code done well. We are GoodCodeClub.</p>
               </div>
+
+              <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-2">
+                Services
+              </h4>
+              <div className="mb-4 reveal2">
+                {services.map((po, pi) => {
+                  return (
+                    <div
+                      className="d-flex align-items-center lh-sm"
+                      key={pi}
+                    >
+                      <span
+                        className="d-block"
+                        style={{ whiteSpace: "nowrap" }}
+                      >
+                        {po.name}
+                      </span>
+                      <hr className="border-white border border-bottom-0 border-1 m-0 mx-2 w-100 opacity-25" />
+                      <p
+                        className="m-0 small ms-auto opacity-50 fw-light"
+                        style={{ whiteSpace: "nowrap" }}
+                      >
+                        {po.role}
+                      </p>
+                    </div>
+                  );
+                })}
+              </div>
+
 
               <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-2">
                 Collaborators
@@ -207,159 +286,27 @@ export default function Page() {
                   </div>
                 );
               })}
+
+
+
             </div>
 
-            <div className="col-xl-8 col-lg-6">
-              <div className="row gx-lg-5">
-                <div className="col-xl-6 mt-lg-0 mt-4">
-                  <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-2">
-                    Services
-                  </h4>
-                  <div className="mb-4 reveal2">
-                    {services.map((po, pi) => {
-                      return (
-                        <div
-                          className="d-flex align-items-center lh-sm"
-                          key={pi}
-                        >
-                          <span
-                            className="d-block"
-                            style={{ whiteSpace: "nowrap" }}
-                          >
-                            {po.name}
-                          </span>
-                          <hr className="border-white border border-bottom-0 border-1 m-0 mx-2 w-100 opacity-25" />
-                          <p
-                            className="m-0 small ms-auto opacity-50 fw-light"
-                            style={{ whiteSpace: "nowrap" }}
-                          >
-                            {po.role}
-                          </p>
-                        </div>
-                      );
-                    })}
+            <div className="col-xl-4 col-lg-5">
+              <div className="row gx-lg-5 h-100">
+                <div className="col-xl-12 mt-lg-0 mt-4 h-100">
+
+
+                  <div className="position-sticky" style={{
+                    top: "1.5rem"
+                  }}>
+
+
+                    <Sidebar list={articles} noto={noto} />
+
+
                   </div>
 
-                  <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-2">
-                    Current projects
-                  </h4>
 
-                  <div className="row mb-4 align-items-center gx-3">
-                    <div className="col-lg-2 col-2">
-                      <a href="https://htmlcats.com" target="_blank">
-                        <img src="./htmlcats.svg" className="w-100 d-block" />
-                      </a>
-                    </div>
-                    <div className="col-lg-2 col-2">
-                      <a href="https://flexboxtoronto.com" target="_blank">
-                        <img
-                          src="https://flexboxtoronto.com/images/logo_white.svg"
-                          className="w-100 d-block"
-                        />
-                      </a>
-                    </div>
-                    <div className="col-lg-2 col-2">
-                      <a href="https://letterform.app" target="_blank">
-                        <img src="./saboten.svg" className="w-100 d-block" />
-                      </a>
-                    </div>
-                    <div className="col-lg-2 col-2">
-                      <a href="https://kindervillage.ca/" target="_blank">
-                        <img
-                          src="./kindervillage.svg"
-                          className="w-100 d-block"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                  <div className=""></div>
-
-                  <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-2">
-                    Contact Us
-                  </h4>
-
-                  <p className="m-0 lh-sm">
-                    <i className="bi bi-person"></i>{" "}
-                    <a href="https://chriskkim.com/" target="_blank">
-                      Chris Kim, PhD
-                    </a>{" "}
-                    <sup className={noto.className}>김경윤</sup>
-                    <br />
-                    <i className="bi bi-envelope"></i>{" "}
-                    <a href="mailto:chris@goodcodeclub.com">
-                      chris@goodcodeclub.com
-                    </a>
-                    <br />
-                    <i className="bi bi-calendar2"></i>{" "}
-                    <a href="https://chriskkim.youcanbook.me/" target="_blank">
-                      Book a meeting
-                    </a>
-                  </p>
-                </div>
-
-                <div className="col-xl-6 mt-xl-0 mt-4">
-                  <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-2">
-                    Our friends
-                  </h4>
-
-                  <p className="small m-0 mb-2">
-                    We made many talented friends along the way, and we think
-                    you'll like to meet them too.
-                  </p>
-
-                  <div className="small row">
-                    {TalentList().map((to, ti) => {
-                      return (
-                        <>
-                          <div className="col-6 mb-2">
-                            <>
-                              <span className="text-uppercase">{to.name}</span>
-                            </>
-                            {to.list
-                              .sort((a, b) => a.fname.localeCompare(b.fname))
-                              .map((po, pi) => {
-                                return (
-                                  <div
-                                    className="d-block align-items-center lh-sm small overflow-hidden opacity-50"
-                                    style={{
-                                      whiteSpace: "nowrap",
-                                      textOverflow: "ellipsis",
-                                    }}
-                                    key={pi}
-                                  >
-                                    <a
-                                      href={
-                                        "https://linkedin.com/in/" + po.linkedin
-                                      }
-                                      target="_blank"
-                                      className=" overflow-hidden w-100"
-                                      style={{
-                                        whiteSpace: "nowrap",
-                                        textOverflow: "ellipsis",
-                                      }}
-                                    >
-                                      {po.fname} {po.lname}
-                                    </a>
-                                    {/* <hr className="border-white border border-bottom-0 border-1 m-0 mx-2 w-100 opacity-25" /> */}
-                                    {/* <p className="m-0 small ms-auto opacity-50 fw-light" style={{ whiteSpace: "nowrap" }}>{po.role}</p> */}
-                                  </div>
-                                );
-                              })}
-                          </div>
-                        </>
-                      );
-                    })}
-                  </div>
-
-                  <p className="small m-0  mt-2 text-start fw-light">
-                    <small className="d-block">
-                      Did we forget about you?{" "}
-                      <a href="mailto:chris@goodcodeclub.com">
-                        Kindly remind us
-                      </a>
-                      .
-                    </small>
-                  </p>
                 </div>
               </div>
             </div>
