@@ -142,6 +142,7 @@ export default function Page() {
     ];
 
     const [articles, setArticles] = useState([]);
+    const [articles2, setArticles2] = useState([]);
 
     const loadBlog = async () => {
 
@@ -149,6 +150,7 @@ export default function Page() {
         const data = await result.json();
 
         setArticles(data.data);
+        setArticles2(data.data.reverse());
 
 
     }
@@ -180,7 +182,7 @@ export default function Page() {
                             </h4>
 
                             <div className="mb-0 reveal2 row gy-1">
-                                {(articles.toReversed()).map((po, pi) => {
+                                {articles2.map((po, pi) => {
 
                                     let metadata: any = {};
 
@@ -214,6 +216,7 @@ export default function Page() {
                                                 >
                                                     <span className="opacity-50">{new Date(metadata.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
                                                 </p>
+
                                             </div>
 
                                         </div>
