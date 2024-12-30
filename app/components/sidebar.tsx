@@ -42,7 +42,6 @@ export function Sidebar(props) {
             <a href="https://chriskkim.com/" target="_blank">
                 Chris Kim, PhD
             </a>{" "}
-            <sup className={props.noto}>김경윤</sup>
             <br />
             <i className="bi bi-envelope"></i>{" "}
             <a href="mailto:chris@goodcodeclub.com">
