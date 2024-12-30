@@ -157,36 +157,8 @@ export default function Page() {
 
     loadBlog();
 
-
   }, [])
 
-  const internal = [
-
-    {
-      image: "./htmlcats.svg",
-      url: "https://htmlcats.com",
-      name: "HTMLCATS",
-      description: "Free web development tutorials"
-    },
-    {
-      image: "https://flexboxtoronto.com/images/logo_white.svg",
-      url: "https://flexboxtoronto.com",
-      name: "Flexbox",
-      description: "Flexible studio rental"
-    },
-    {
-      image: "./saboten.svg",
-      url: "https://letterform.app",
-      name: "Letterform",
-      description: "Minimalist publishing platform"
-    },
-    {
-      image: "./kindervillage.svg",
-      url: "https://kindervillage.ca",
-      name: "Kindervillage",
-      description: "Child care resources and solutions"
-    },
-  ]
 
   return (
     <div
@@ -210,20 +182,20 @@ export default function Page() {
                   The web is a beautiful mess.
                 </p>
 
-                <p className="m-0 mb-2 small">
+                <p className="m-0 mb-2 ">
                   Here at GoodCodeClub, we vividly remember the early days of
                   the World Wide Web, where we celebrated every online
                   interaction on painfully slow dial-up networks.
                 </p>
 
-                <p className="m-0 mb-2 small">
+                <p className="m-0 mb-2 ">
                   Fast forward to today, where every web project feels heavier,
                   its production process more convoluted than ever. The
                   cyberspace certainly is more crowded and hectic now, but your
                   codebase doesn't have to be.
                 </p>
 
-                <p className="m-0 mb-2 small">
+                <p className="m-0 mb-2 ">
                   We sift through all the fluff and get down to the substance.
                   We build grounded solutions to your creative and business
                   challenges.
@@ -250,7 +222,7 @@ export default function Page() {
                       </span>
                       <hr className="border-white border border-bottom-0 border-1 m-0 mx-2 w-100 opacity-25" />
                       <p
-                        className="m-0 small ms-auto opacity-50 fw-light"
+                        className="m-0  ms-auto opacity-50 fw-light small d-sm-block d-none"
                         style={{ whiteSpace: "nowrap" }}
                       >
                         {po.role}
@@ -278,7 +250,7 @@ export default function Page() {
                     </a>
                     <hr className="border-white border border-bottom-0 border-1 m-0 mx-2 w-100 opacity-25" />
                     <p
-                      className="m-0 small ms-auto opacity-50 fw-light"
+                      className="m-0  ms-auto opacity-50 fw-light small d-sm-block d-none"
                       style={{ whiteSpace: "nowrap" }}
                     >
                       {po.role}

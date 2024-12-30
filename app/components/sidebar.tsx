@@ -37,7 +37,7 @@ export function Sidebar(props) {
             Contact Us
         </h4>
 
-        <p className="m-0 lh-sm mb-4">
+        <p className="m-0 lh-sm mb-4 text-truncate">
             <i className="bi bi-person"></i>{" "}
             <a href="https://chriskkim.com/" target="_blank">
                 Chris Kim, PhD
@@ -64,17 +64,17 @@ export function Sidebar(props) {
 
             {internal.map((io, ii) => {
                 return <div className="col-12">
-                    <a href={io.url} target="_blank" className="d-flex align-items-center text-decoration-none">
+                    <a href={io.url} target="_blank" className="d-flex align-items-center text-decoration-none ">
                         <img src={io.image} className="d-block" style={{
                             width: "2rem"
                         }} />
-                        <div className="w-100 ms-2">
+                        <div className="w-100 ms-2 text-truncate overflow-hidden">
 
                             <h6 className="fw-normal m-0 text-decoration-underline">
                                 {io.name}
                             </h6>
                             <p
-                                className="m-0 small ms-auto opacity-50 fw-light"
+                                className="m-0 small ms-auto opacity-50 fw-light w-100 text-truncate overflow-hidden"
                                 style={{ whiteSpace: "nowrap" }}
                             >
                                 {io.description}

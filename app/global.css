@@ -21,6 +21,7 @@ html
 body {
     /* min-height: 100vh; */
 	font-family: "GothamPro" !important;
+    overflow-y: scroll;
 }
 
 a
@@ -77,37 +78,37 @@ a
 
 #view
 {
-    font-size:12px !important
+    /* font-size:12px !important */
 }
 
 #view h1
 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 #view h2
 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 #view h3
 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 #view h4
 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 #view h5
 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 #view h6
 {
-    font-size: 1.0rem;
+    font-size: 1.1rem;
 }
 
 #view h1, #view h2, #view h3, #view h4, #view h5, #view h6
@@ -120,7 +121,7 @@ a
 #view ul,
 #view ol
 {
-	font-size:0.9rem;
+	font-size:1rem;
     overflow: hidden;
     text-overflow: ellipsis;
 }

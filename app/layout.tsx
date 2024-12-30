@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap-icons/font/bootstrap-icons.min.css";
 import './global.css';
@@ -22,37 +22,71 @@ export default function RootLayout({
 }) {
 
     const pathname = usePathname();
-
     const [title, setTitle] = useState("GoodCodeClub - digital media, web development, prototyping - Toronto, Canada");
 
-    
-    if (pathname.indexOf("/blog/") === 0) {
+    useEffect(() => {
 
 
-        const loadArticle = async () => {
+        if (pathname.indexOf("/blog/") === 0) {
 
 
-            const pathArray = pathname.split("/");
+            const loadArticle = async () => {
 
-            if (pathArray.length > 2) {
 
-                const result = await fetch("https://api.letterform.app/public/pages/get?project_slug=goodcodeclub-blog&article_slug=" + pathArray[2]);
-                const data = await result.json();
+                const pathArray = pathname.split("/");
 
-                if (data.data) {
+                if (pathArray.length > 2) {
 
-                    setTitle(data.data.title + " - " + "GoodCodeClub - Toronto, Canada");
+                    const result = await fetch("https://api.letterform.app/public/pages/get?project_slug=goodcodeclub-blog&article_slug=" + pathArray[2]);
+                    const data = await result.json();
+
+                    if (data.data) {
+
+                        setTitle(data.data.title + " - " + "GoodCodeClub - Toronto, Canada");
+
+                    }
 
                 }
 
-            }
 
+            }
+            loadArticle();
+
+        } else if (pathname.indexOf("/work/") === 0) {
+
+            
+
+            const loadArticle = async () => {
+
+                const pathArray = pathname.split("/");
+
+                if (pathArray.length > 2) {
+
+                    const result = await fetch("https://api.letterform.app/public/pages/get?project_slug=goodcodeclub-work&article_slug=" + pathArray[2]);
+                    const data = await result.json();
+
+                    if (data.data) {
+
+                        setTitle(data.data.title + " - " + "GoodCodeClub - Toronto, Canada");
+
+                    }
+
+                }
+
+
+            }
+            loadArticle();
+        } else if (pathname.indexOf("/blog") === 0) {
+
+            setTitle("Blog - " + "GoodCodeClub - Toronto, Canada");
+
+        } else if (pathname.indexOf("/work") === 0) {
+
+            setTitle("Work - " + "GoodCodeClub - Toronto, Canada");
 
         }
-        loadArticle();
 
-
-    }
+    }, []);
 
     return (
         <html lang="en">
@@ -62,9 +96,18 @@ export default function RootLayout({
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LYZDGJWZ8G"></script>
                 <script dangerouslySetInnerHTML={{ __html: gaTag }}></script>
             </head>
-            <body className=" bg-primary text-white d-flex flex-column" style={{
+            <body className=" bg-primary text-white d-flex flex-column" style={{}}>
+                {/* <iframe src="https://threejs.org/examples/webgl_effects_ascii.html" className="position-fixed w-100 h-100 pe-none" style={{
+                    left: 0,
+                    top: 0,
+                    zIndex: 100,
+                    filter: "blur(10px)",
+                    mixBlendMode: "screen",
+                    opacity:0.2,
 
-            }}>{children}</body>
+                }}></iframe> */}
+                {children}
+            </body>
         </html>
     )
 }
