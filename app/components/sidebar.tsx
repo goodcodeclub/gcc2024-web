@@ -95,7 +95,7 @@ export function Sidebar(props) {
         </h4>
 
         <div className="mb-0 reveal2">
-            {props.list.map((po, pi) => {
+            {structuredClone(props.list).reverse().map((po, pi) => {
 
                 if (pi > 0) {
                     return <></>
