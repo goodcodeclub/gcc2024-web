@@ -119,7 +119,7 @@ export function Sidebar(props) {
                         key={"article_" + pi}
                     >
                         <Link
-                            className="d-block w-100 opacity-15"
+                            className="d-block opacity-15 small"
                             style={{ whiteSpace: "" }}
                             href={"/blog/" + po.slug}
                         >
