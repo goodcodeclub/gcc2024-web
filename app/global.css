@@ -142,10 +142,9 @@ a
 
 #view pre>code
 {
-	padding:1em;
-	background-color: #eee;
-	display: block;
-    overflow: auto;
+	padding:1rem;
+    background-color: rgba(255,255,255,0.15);
+	display: block;	
 }
 
 #view img
