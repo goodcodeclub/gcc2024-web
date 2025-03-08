@@ -150,7 +150,7 @@ export default function Page() {
         const data = await result.json();
 
         setArticles(data.data);
-        setArticles2(structuredClone(data.data).reverse());
+        setArticles2(structuredClone(data.data));
 
 
     }
