@@ -84,6 +84,11 @@ export default function RootLayout({
 
             setTitle("Work - " + "GoodCodeClub - Toronto, Canada");
 
+        } else if (pathname.indexOf("/contact") === 0) {
+
+            setTitle("Contact - " + "GoodCodeClub - Toronto, Canada");
+
+
         }
 
     }, []);

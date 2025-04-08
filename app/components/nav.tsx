@@ -18,6 +18,10 @@ export default function Nav() {
             path: "/blog",
         },
 
+        {
+            name: "Contact",
+            path: "/contact",
+        },
     ]
 
     const pathname = usePathname();

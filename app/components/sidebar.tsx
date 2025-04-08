@@ -38,11 +38,6 @@ export function Sidebar(props) {
         </h4>
 
         <p className="m-0 lh-sm mb-4 text-truncate">
-            <i className="bi bi-person"></i>{" "}
-            <a href="https://chriskkim.com/" target="_blank">
-                Chris Kim, PhD
-            </a>{" "}
-            <br />
             <i className="bi bi-envelope"></i>{" "}
             <a href="mailto:chris@goodcodeclub.com">
                 chris@goodcodeclub.com
