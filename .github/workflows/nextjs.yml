@@ -82,7 +82,25 @@ jobs:
       # uses: actions/upload-pages-artifact@v1
       # with:
       # path: ./out
-
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build    
+    steps:
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOSTNAME }}
+        username: root
+        password: ${{ secrets.PASSWORD }}
+        port: 22
+        script: | 
+          cd /var/www/gcc_web
+          git pull https://${{ secrets.GH_TOKEN }}@github.com/goodcodeclub/gcc2024-web.git
+          export NVM_DIR=~/.nvm
+          source ~/.nvm/nvm.sh
+          npm --help
+          npm i
+          pm2 restart gcc-web
   # Deployment job
   #deploy:
   #  environment:

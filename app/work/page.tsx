@@ -26,7 +26,7 @@ export default function Page() {
 
     const loadBlog = async () => {
 
-        const result = await fetch("https://api.letterform.app/public/pages/list?project_slug=goodcodeclub-blog");
+        const result = await fetch("https://api.letterform.app/public/pages/list?user_email=chris@goodcodeclub.com&project_slug=goodcodeclub-blog");
         const data = await result.json();
 
         setArticles(data.data);
@@ -35,7 +35,7 @@ export default function Page() {
 
     const loadWork = async () => {
 
-        const result = await fetch("https://api.letterform.app/public/pages/list?project_slug=goodcodeclub-work");
+        const result = await fetch("https://api.letterform.app/public/pages/list?user_email=chris@goodcodeclub.com&project_slug=goodcodeclub-work");
         const data = await result.json();
 
         setProjects(data.data);

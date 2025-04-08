@@ -37,7 +37,7 @@ export default function RootLayout({
 
                 if (pathArray.length > 2) {
 
-                    const result = await fetch("https://api.letterform.app/public/pages/get?project_slug=goodcodeclub-blog&article_slug=" + pathArray[2]);
+                    const result = await fetch("https://api.letterform.app/public/pages/get?user_email=chris@goodcodeclub.com&project_slug=goodcodeclub-blog&article_slug=" + pathArray[2]);
                     const data = await result.json();
 
                     if (data.data) {
@@ -62,7 +62,7 @@ export default function RootLayout({
 
                 if (pathArray.length > 2) {
 
-                    const result = await fetch("https://api.letterform.app/public/pages/get?project_slug=goodcodeclub-work&article_slug=" + pathArray[2]);
+                    const result = await fetch("https://api.letterform.app/public/pages/get?user_email=chris@goodcodeclub.com&project_slug=goodcodeclub-work&article_slug=" + pathArray[2]);
                     const data = await result.json();
 
                     if (data.data) {

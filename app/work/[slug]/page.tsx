@@ -34,7 +34,7 @@ export default function Page(props) {
 
   const loadArticle = async () => {
 
-    const result = await fetch("https://api.letterform.app/public/pages/get?project_slug=goodcodeclub-work&article_slug=" + props.params.slug);
+    const result = await fetch("https://api.letterform.app/public/pages/get?user_email=chris@goodcodeclub.com&project_slug=goodcodeclub-work&article_slug=" + props.params.slug);
     const data = await result.json();
 
     if (data.data) {
@@ -61,7 +61,7 @@ export default function Page(props) {
 
   const loadBlog = async () => {
 
-    const result = await fetch("https://api.letterform.app/public/pages/list?project_slug=goodcodeclub-blog");
+    const result = await fetch("https://api.letterform.app/public/pages/list?user_email=chris@goodcodeclub.com&project_slug=goodcodeclub-blog");
     const data = await result.json();
 
     setArticles(data.data);
