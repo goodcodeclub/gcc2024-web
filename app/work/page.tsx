@@ -113,7 +113,7 @@ export default function Page() {
                                                     style={{ whiteSpace: "" }}
                                                 >
                                                 </p>
-                                                <p className="fw-light opacity-50 small text-truncate text-nowrap overflow-hidden">
+                                                <p className="fw-light opacity-50 small text-truncate text-nowrap overflow-hidden m-0">
                                                     <em>{metadata?.url.replaceAll("https://", "")}</em>
                                                 </p>
                                             </div>
@@ -127,7 +127,7 @@ export default function Page() {
                                 Selected Work
                             </h4>
 
-                            <div className="mb-0 reveal2 row gx-3 gy-3 mb-4">
+                            <div className="mb-0 reveal2 row gx-3 gy-3 mb-lg-4">
                                 {projects.map((po, pi) => {
                                     let metadata: any = {};
 
@@ -176,7 +176,7 @@ export default function Page() {
                                                     style={{ whiteSpace: "" }}
                                                 >
                                                 </p>
-                                                <p className="fw-light opacity-50 small text-truncate text-nowrap overflow-hidden">
+                                                <p className="fw-light opacity-50 small text-truncate text-nowrap overflow-hidden m-0">
                                                     <em>{metadata?.url.replaceAll("https://", "")}</em>
                                                 </p>
                                             </div>
