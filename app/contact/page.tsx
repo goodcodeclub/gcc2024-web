@@ -104,6 +104,11 @@ export default function Page() {
                                     222 Finch Ave W Suite 105, North York, ON M2R 1M6
                                 </a>
                                 <br />
+                                <i className="bi bi-linkedin"></i>{" "}
+                                <a href="https://www.linkedin.com/company/goodcodeclub/" target="_blank">
+                                    LinkedIn
+                                </a>                                
+                                <br />
                                 <i className="bi bi-calendar2"></i>{" "}
                                 <a href="https://chriskkim.youcanbook.me/" target="_blank">
                                     Book a meeting

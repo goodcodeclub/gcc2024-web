@@ -45,7 +45,7 @@ export default function Nav() {
 
                     {links.map((lo,li) => {
                         return <>
-                            <a href={lo.path} className={"text-decoration-none d-lg-block d-none1 px-0 mx-0 me-0 me-md-3 me-2 "+((pathname == lo.path || (lo.path.length > 1 && pathname.indexOf(lo.path) === 0)) ? "border-bottom1 border-21 opacity-100" : "opacity-50")}>{lo.name}</a>                        
+                            <a href={lo.path} className={"text-decoration-none d-lg-block d-none1 px-0 mx-0 me-0 me-md-3 me-sm-2 me-2 "+((pathname == lo.path || (lo.path.length > 1 && pathname.indexOf(lo.path) === 0)) ? "border-bottom1 border-21 opacity-100" : "opacity-50")}>{lo.name}</a>                        
                         </>
                     })}
 
@@ -54,7 +54,7 @@ export default function Nav() {
                 <div className="ms-auto d-lg-flex d-flex d-none1 text-center mt-lg-0 mt-0 justify-content-center align-items-center">
 
 
-                    <div className="text-lg-end text-center fs-5 d-lg-flex d-flex align-items-center">
+                    <div className="text-lg-end text-center fs-5 d-lg-flex d-sm-flex d-none align-items-center">
 
                         <a className="ms-lg-0 ms-0" target="_blank" href="https://www.linkedin.com/company/goodcodeclub/"><i className="bi bi-linkedin"></i></a>
                         <a className="ms-lg-2 ms-2" href="mailto:chris@goodcodeclub.com"><i className="bi bi-envelope-fill"></i></a>
