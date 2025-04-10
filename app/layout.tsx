@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
 
     const pathname = usePathname();
-    const [title, setTitle] = useState("GoodCodeClub - digital media, web development, prototyping - Toronto, Canada");
+    const [title, setTitle] = useState("");
 
     useEffect(() => {
 
@@ -88,10 +88,13 @@ export default function RootLayout({
 
             setTitle("Contact - " + "GoodCodeClub - Toronto, Canada");
 
+        } else {
+            
+            setTitle("GoodCodeClub - digital media, web development, prototyping - Toronto, Canada");
 
         }
 
-    }, []);
+    }, [pathname]);
 
     return (
         <html lang="en">
