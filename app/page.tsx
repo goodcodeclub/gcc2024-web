@@ -258,7 +258,7 @@ export default function Page() {
 
 
                   <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-3">
-                    Featured Projects
+                    Featured Stories
                   </h4>
 
                   <div className="mb-0 reveal2 row gx-3 gy-3 mb-4">

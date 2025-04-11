@@ -30,6 +30,18 @@ export function Sidebar(props) {
             name: "Kindervillage",
             description: "Child care resources and solutions"
         },
+        // {
+        //     image: "../../nextfirststeps.svg",
+        //     url: "#",
+        //     name: "NextFirstSteps",
+        //     description: "Emerging talent recruitment"
+        // },
+        // {
+        //     image: "../../uptimetrace.svg",
+        //     url: "#",
+        //     name: "UptimeTrace",
+        //     description: "Website monitoring solution"
+        // },
     ]
     return <>
 
@@ -51,20 +63,21 @@ export function Sidebar(props) {
 
 
         <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-2">
-            Current projects
+            Internal projects
         </h4>
 
         <div className="row gy-1 mb-4 align-items-center">
 
             {internal.map((io, ii) => {
                 return <div className="col-12">
-                    <a href={io.url} target="_blank" className="d-flex align-items-center text-decoration-none ">
-                        <img src={io.image} className="d-block" style={{
+                    <a href={io.url == "#" ? "" : io.url} target={io.url == "#" ? "" : "_blank"} className="d-flex align-items-center text-decoration-none  text-truncate overflow-hidden ">
+                        <img src={io.image} className="d-block me-1 opacity-50" style={{
                             width: "2rem"
                         }} />
+
                         <div className="w-100 ms-2 text-truncate overflow-hidden">
 
-                            <h6 className="fw-normal m-0 text-decoration-underline">
+                            <h6 className="fw-normal m-0 text-decoration-underline d-flex align-items-center">
                                 {io.name}
                             </h6>
                             <p
