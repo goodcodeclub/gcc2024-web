@@ -30,12 +30,12 @@ export function Sidebar(props) {
             name: "Kindervillage",
             description: "Child care resources and solutions"
         },
-        // {
-        //     image: "../../nextfirststeps.svg",
-        //     url: "#",
-        //     name: "NextFirstSteps",
-        //     description: "Emerging talent recruitment"
-        // },
+        {
+            image: "../../nextfirststeps.svg",
+            url: "https://nextfirststeps.com/",
+            name: "NextFirstSteps",
+            description: "Recruitment and upskilling support"
+        },
         // {
         //     image: "../../uptimetrace.svg",
         //     url: "#",
