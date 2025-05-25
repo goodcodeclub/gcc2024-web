@@ -181,7 +181,7 @@ export default function Page() {
                                 Blog
                             </h4>
 
-                            <div className="mb-0 reveal2 row gy-1">
+                            <div className="mb-0 reveal2 row gy-2">
                                 {articles2.map((po, pi) => {
 
                                     let metadata: any = {};
@@ -209,7 +209,17 @@ export default function Page() {
                                                 {po.title}
                                             </Link>
 
-                                            <div className="mt-1">
+
+                                            <div className="small mt-1 w-75">
+                                                <p
+                                                    className="m-0 small ms-auto fw-light"
+                                                    style={{ whiteSpace: "" }}
+                                                >
+                                                    <span className="opacity-50">{metadata.excerpt}</span>
+                                                </p>
+                                            </div>
+
+                                            <div className="mt-1 d-none">
                                                 <p
                                                     className="m-0 ms-auto fw-light small"
                                                     style={{ whiteSpace: "" }}

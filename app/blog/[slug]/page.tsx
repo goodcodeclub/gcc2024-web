@@ -221,14 +221,14 @@ export default function Page(props) {
                 <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0">
                   {article.title}
                 </h4>
-
+{/* 
                 {metadata.date &&
 
                   <h6 className="fw-normal m-0 mt-2">
                     {new Date(metadata.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
                   </h6>
 
-                }
+                } */}
 
 
                 <div className="fw-light mt-3" id="view">

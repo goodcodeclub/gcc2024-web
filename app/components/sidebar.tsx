@@ -99,10 +99,10 @@ export function Sidebar(props) {
 
 
         <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-2">
-            Latest News
+            Latest blog
         </h4>
 
-        <div className="mb-0 reveal2">
+        <div className="mb-0 reveal2 pb-4">
             {structuredClone(props.list).map((po, pi) => {
 
                 if (pi > 0) {
@@ -139,7 +139,7 @@ export function Sidebar(props) {
                                 className="m-0 small ms-auto fw-light"
                                 style={{ whiteSpace: "" }}
                             >
-                                <span className="opacity-50">{new Date(metadata.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })} - {metadata.excerpt}</span> <Link href={"/blog/" + po.slug} className="text-white opacity-100">(Read more)</Link>
+                                <span className="opacity-50">{metadata.excerpt}</span> <Link href={"/blog/" + po.slug} className="text-white opacity-100">(Read more)</Link>
                             </p>
                         </div>
 
