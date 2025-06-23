@@ -208,7 +208,7 @@ export default function Page() {
                                             </Link>
 
 
-                                            <div className="small mt-1 w-75">
+                                            <div className="small mt-1 me-lg-5">
                                                 <p
                                                     className="m-0 small ms-auto fw-light"
                                                     style={{ whiteSpace: "" }}

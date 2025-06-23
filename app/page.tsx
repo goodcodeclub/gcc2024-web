@@ -418,11 +418,11 @@ export default function Page() {
                     <h5 className="text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-2">
                       Services
                     </h5>
-                    <div className="mb-4 reveal2">
+                    <div className="mb-4 reveal2 row gy-md-0 gy-1">
                       {services.map((po, pi) => {
                         return (
                           <div
-                            className="d-flex align-items-center lh-sm"
+                            className="d-md-flex align-items-center lh-sm col-12"
                             key={pi}
                           >
                             <span
@@ -431,9 +431,9 @@ export default function Page() {
                             >
                               {po.name}
                             </span>
-                            <hr className="border-dark border border-bottom-0 border-1 m-0 mx-2 w-100 opacity-25" />
+                            <hr className="border-dark border border-bottom-0 border-1 m-0 mx-2 w-100 opacity-25 d-md-block d-none" />
                             <p
-                              className="m-0  ms-auto opacity-50 fw-light small d-sm-block d-none"
+                              className="m-0  ms-auto opacity-50 fw-light small d-sm-block d-none1"
                               style={{ whiteSpace: "nowrap" }}
                             >
                               {po.role}
@@ -453,9 +453,11 @@ export default function Page() {
                       Collaborators
                     </h5>
 
+                    <div className="mb-4 reveal2 row gy-md-0 gy-1">
+
                     {projects.map((po, pi) => {
                       return (
-                        <div className="d-flex align-items-center lh-sm" key={pi}>
+                        <div className="d-md-flex align-items-center lh-sm col-12" key={pi}>
                           <a
                             href={po.url}
                             target="_blank"
@@ -464,9 +466,9 @@ export default function Page() {
                           >
                             {po.name}
                           </a>
-                          <hr className="border-dark border border-bottom-0 border-1 m-0 mx-2 w-100 opacity-25" />
+                            <hr className="border-dark border border-bottom-0 border-1 m-0 mx-2 w-100 opacity-25 d-md-block d-none" />
                           <p
-                            className="m-0  ms-auto opacity-50 fw-light small d-sm-block d-none"
+                            className="m-0  ms-auto opacity-50 fw-light small d-sm-block"
                             style={{ whiteSpace: "nowrap" }}
                           >
                             {po.role}
@@ -474,6 +476,8 @@ export default function Page() {
                         </div>
                       );
                     })}
+
+                    </div>
 
 
                   </div>
