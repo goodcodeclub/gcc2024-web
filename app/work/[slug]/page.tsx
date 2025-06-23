@@ -86,21 +86,19 @@ export default function Page(props) {
 
   return (
     <div
-      className="my-auto0 py-lg-4 py-4 font-neodgm1 text-uppercase1"
+      className="my-auto0 pb-4 font-neodgm1 text-uppercase1"
       ref={refToComponent}
     >
-      <div className="reveal1 mb-lg-5 mb-4">
         <Nav />
-      </div>
 
       <div className="px-lg-0 px-3">
         <div className="container">
-          <div className="row gx-lg-5 align-items-stretch">
+          <div className="row gx-lg-0 align-items-stretch justify-content-center">
             <div className="col-xl-8 col-lg-7">
               <div className="mb-0 reveal2">
-                <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0">
+                <h5 className="text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0">
                   {article.title}
-                </h4>
+                </h5>
 
                 {metadata.date &&
 
@@ -155,8 +153,8 @@ export default function Page(props) {
 
             </div>
 
-            <div className="col-xl-4 col-lg-5 ">
-              <div className="row gx-lg-5 h-100">
+            <div className="col-xl-4 col-lg-5 d-none">
+              <div className="row gx-lg-0 h-100">
                 <div className="col-xl-12 mt-lg-0 mt-4 ">
 
 

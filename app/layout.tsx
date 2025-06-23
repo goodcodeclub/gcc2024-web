@@ -104,7 +104,7 @@ export default function RootLayout({
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LYZDGJWZ8G"></script>
                 <script dangerouslySetInnerHTML={{ __html: gaTag }}></script>
             </head>
-            <body className=" bg-primary text-white d-flex flex-column" style={{}}>
+            <body className=" bg-dark1 text-white1 d-flex flex-column" style={{}}>
                 {/* <iframe src="https://threejs.org/examples/webgl_effects_ascii.html" className="position-fixed w-100 h-100 pe-none" style={{
                     left: 0,
                     top: 0,

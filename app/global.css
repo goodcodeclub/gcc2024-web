@@ -37,7 +37,7 @@ a
     --base-color: #FFFAF3;
 }
 
-.bg-primary
+.bg-dark
 {
     /* background-color: var(--primary-color) !important; */
 }
@@ -143,7 +143,7 @@ a
 #view pre>code
 {
 	padding:1rem;
-    background-color: rgba(255,255,255,0.15);
+    background-color: rgba(0,0,0,0.15);
 	display: block;	
 }
 
@@ -151,6 +151,7 @@ a
 {
 	/* width:100%; */
 	/* max-width:100%; */
+    border: 1px solid rgba(0,0,0,0.15);
 }
 
 #view hr
@@ -162,7 +163,7 @@ a
 #view blockquote
 {
 	padding:1rem;
-    background-color: rgba(255,255,255,0.15);
+    background-color: rgba(0,0,0,0.15);
 	display: block;	
 }
 

@@ -207,33 +207,76 @@ export default function Page() {
 
   let counter = 0;
 
+
+  const internal = [
+
+    {
+      image: "../../htmlcats.svg",
+      url: "https://htmlcats.com",
+      name: "HTMLCATS",
+      description: "Free web development tutorials"
+    },
+    {
+      image: "../../flexbox.svg",
+      url: "https://flexboxtoronto.com",
+      name: "Flexbox",
+      description: "Flexible studio rental"
+    },
+    {
+      image: "../../saboten.svg",
+      url: "https://letterform.app",
+      name: "Letterform",
+      description: "Minimalist publishing platform"
+    },
+    {
+      image: "../../kindervillage.svg",
+      url: "https://kindervillage.ca",
+      name: "Kindervillage",
+      description: "Child care resources and solutions"
+    },
+    {
+      image: "../../nextfirststeps.svg",
+      url: "https://nextfirststeps.com/",
+      name: "NextFirstSteps",
+      description: "Recruitment and upskilling support"
+    },
+    // {
+    //     image: "../../uptimetrace.svg",
+    //     url: "#",
+    //     name: "UptimeTrace",
+    //     description: "Website monitoring solution"
+    // },
+  ]
+
   return (
     <>
-      <div className="text-primary bg-white text-center small">
-        <a href="https://nextfirststeps.com/" target="_blank" className="text-decoration-none py-2 d-block px-3 lh-sm">
+      <div className="text-white bg-dark text-center small d-none">
+        <a href="https://nextfirststeps.com/" target="_blank" className="text-decoration-none py-2 d-block px-2 lh-sm">
           🚀 Check out NextFirstSteps: our new consulting service for emerging talent recruitment  🚀
         </a>
       </div>
       <div
-        className="my-auto0 py-lg-4 py-4 font-neodgm1 text-uppercase1"
+        className="my-auto0 pb-4 font-neodgm1 text-uppercase1"
         ref={refToComponent}
       >
 
-        <div className="reveal1 mb-lg-5 mb-4">
-          <Nav />
-        </div>
+        <Nav />
 
         <div className="px-lg-0 px-3">
           <div className="container">
-            <div className="row gx-lg-5 align-items-stretch">
+            <div className="row gx-lg-0 align-items-stretch justify-content-center">
               <div className="col-xl-8 col-lg-7">
-                <div className="mb-xl-5 mb-4 reveal2">
-                  <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-2">
+                <div className="mb-xl-4 mb-4 reveal2">
+                  {/* <h5 className="text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-2">
                     About us
-                  </h4>
+                  </h5> */}
+
+                  <p className="m-0 mb-2 display-4 fw-bold lh-1 mb-3">
+                    Good code for cultural impact, clear marketing, and business growth.
+                  </p>
 
                   <p className="m-0 mb-2">
-                    The web is a beautiful mess.
+                    The Web Is a Beautiful Mess.
                   </p>
 
                   <p className="m-0 mb-2 ">
@@ -255,18 +298,62 @@ export default function Page() {
                     challenges.
                   </p>
 
-                  <p className="m-0">Good code done well. We are GoodCodeClub.</p>
+                  <p className="m-0 fw-bold">Good code done well. We are GoodCodeClub.</p>
+
+                  {/* 
+
+
+                  <p className="m-0">Good code done well. We are GoodCodeClub.</p> */}
                 </div>
 
-                <div className="row gx-lg-5">
+                <div className="row gx-lg-0">
 
-                  <div className="col-xl-6">
+                  <div className="col-xl-12">
+
+                    <h5 className="text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-3">
+                      Original Projects
+                    </h5>
+
+                    <div>
+
+
+                      <div className="row gy-1 mb-4 gy-3 align-items-center">
+
+                        {internal.map((io, ii) => {
+                          return <div className="col-md-6">
+                            <a href={io.url == "#" ? "" : io.url} target={io.url == "#" ? "" : "_blank"} className="d-flex align-items-center text-decoration-none  text-truncate overflow-hidden ">
+                              <img src={io.image} className="d-block me-1 opacity-50" style={{
+                                width: "2.5rem"
+                              }} />
+
+                              <div className="w-100 ms-2 text-truncate overflow-hidden">
+
+                                <h5 className="fw-normal m-0 text-decoration-none d-flex align-items-center">
+                                  {io.name}
+                                </h5>
+                                <p
+                                  className="m-0 small ms-auto opacity-50 fw-light w-100 text-truncate overflow-hidden"
+                                  style={{ whiteSpace: "nowrap" }}
+                                >
+                                  {io.description}
+                                </p>
+                              </div>
+
+                            </a>
+                          </div>
+
+                        })}
+
+                      </div>
 
 
 
-                    <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-3">
+                    </div>
+
+
+                    <h5 className="text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-3">
                       Featured Stories
-                    </h4>
+                    </h5>
 
                     <div className="mb-0 reveal2 row gx-3 gy-3 mb-4">
 
@@ -302,7 +389,7 @@ export default function Page() {
                               href={"/work/" + po.slug}
                             >
 
-                              <div className="border1 mb-2 bg-white opacity-251" style={{
+                              <div className="border1 mb-2 bg-dark opacity-251" style={{
                                 paddingBottom: "100%",
                                 backgroundSize: "cover",
                                 backgroundPosition: "center",
@@ -328,9 +415,9 @@ export default function Page() {
                       })}
                     </div>
 
-                    <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-2">
+                    <h5 className="text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-2">
                       Services
-                    </h4>
+                    </h5>
                     <div className="mb-4 reveal2">
                       {services.map((po, pi) => {
                         return (
@@ -344,7 +431,7 @@ export default function Page() {
                             >
                               {po.name}
                             </span>
-                            <hr className="border-white border border-bottom-0 border-1 m-0 mx-2 w-100 opacity-25" />
+                            <hr className="border-dark border border-bottom-0 border-1 m-0 mx-2 w-100 opacity-25" />
                             <p
                               className="m-0  ms-auto opacity-50 fw-light small d-sm-block d-none"
                               style={{ whiteSpace: "nowrap" }}
@@ -358,13 +445,13 @@ export default function Page() {
 
                   </div>
 
-                  <div className="col-xl-6">
+                  <div className="col-xl-12 mb-0">
 
 
 
-                    <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-2">
+                    <h5 className="text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-2">
                       Collaborators
-                    </h4>
+                    </h5>
 
                     {projects.map((po, pi) => {
                       return (
@@ -377,7 +464,7 @@ export default function Page() {
                           >
                             {po.name}
                           </a>
-                          <hr className="border-white border border-bottom-0 border-1 m-0 mx-2 w-100 opacity-25" />
+                          <hr className="border-dark border border-bottom-0 border-1 m-0 mx-2 w-100 opacity-25" />
                           <p
                             className="m-0  ms-auto opacity-50 fw-light small d-sm-block d-none"
                             style={{ whiteSpace: "nowrap" }}
@@ -398,20 +485,11 @@ export default function Page() {
 
               </div>
 
-              <div className="col-xl-4 col-lg-5">
-                <div className="row gx-lg-5 h-100">
+              <div className="col-xl-4 col-lg-5 d-none">
+                <div className="row gx-lg-0 h-100">
                   <div className="col-xl-12 mt-lg-0 mt-4 h-100">
 
 
-                    <div className="position-sticky" style={{
-                      top: "1.5rem"
-                    }}>
-
-
-                      <Sidebar list={articles} noto={noto} />
-
-
-                    </div>
 
 
                   </div>

@@ -72,21 +72,19 @@ export default function Page() {
 
     return (
         <div
-            className="my-auto0 py-lg-4 py-4 font-neodgm1 text-uppercase1"
+            className="my-auto0 pb-4 font-neodgm1 text-uppercase1"
             ref={refToComponent}
         >
-            <div className="reveal1 mb-lg-5 mb-4">
                 <Nav />
-            </div>
 
             <div className="px-lg-0 px-3">
                 <div className="container">
-                    <div className="row gx-lg-5 align-items-stretch">
+                    <div className="row gx-lg-0 align-items-stretch justify-content-center">
                         <div className="col-xl-8 col-lg-7">
 
-                            <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-2">
+                            <h5 className="text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-2">
                                 Get in touch
-                            </h4>
+                            </h5>
 
                             <p className="m-0 lh-sm mb-4 text-truncate">
                                 <i className="bi bi-person"></i>{" "}
@@ -108,11 +106,11 @@ export default function Page() {
                                 <a href="https://www.linkedin.com/company/goodcodeclub/" target="_blank">
                                     LinkedIn
                                 </a>                                
-                                <br />
+                                {/* <br />
                                 <i className="bi bi-calendar2"></i>{" "}
                                 <a href="https://chriskkim.youcanbook.me/" target="_blank">
                                     Book a meeting
-                                </a>
+                                </a> */}
                             </p>
 
                             <form onSubmit={async (e) => {
@@ -157,13 +155,13 @@ export default function Page() {
                                             }
                                         </h6>
                                         {spec.type == "textarea" &&
-                                            <textarea name={spec.name.toLowerCase()} required={spec.optional ? false : true} className="form-control bg-transparent border-1 border-white mb-3 text-white fw-normal" rows={5} onChange={(e) => setForm({
+                                            <textarea name={spec.name.toLowerCase()} required={spec.optional ? false : true} className="form-control bg-transparent border-1 border-dark mb-3 text-dark fw-normal" rows={5} onChange={(e) => setForm({
                                                 ...form,
                                                 [spec.name.toLowerCase()]: e.target.value
                                             })} ></textarea>
                                         }
                                         {spec.type != "textarea" &&
-                                            <input name={spec.name.toLowerCase()} type={spec.type} required={spec.optional ? false : true} className="form-control bg-transparent border-1 border-white mb-3 text-white fw-normal" onChange={(e) => setForm({
+                                            <input name={spec.name.toLowerCase()} type={spec.type} required={spec.optional ? false : true} className="form-control bg-transparent border-1 border-dark mb-3 text-dark fw-normal" onChange={(e) => setForm({
                                                 ...form,
                                                 [spec.name.toLowerCase()]: e.target.value
                                             })} />
@@ -175,7 +173,7 @@ export default function Page() {
 
 
                                 <div className="d-flex">
-                                    <button className="btn btn-outline-light border-white ms-auto">
+                                    <button className="btn btn-outline-dark border-dark ms-auto">
                                         Submit form
                                     </button>
                                 </div>
@@ -185,8 +183,8 @@ export default function Page() {
 
                         </div>
 
-                        <div className="col-xl-4 col-lg-5">
-                            <div className="row gx-lg-5 h-100">
+                        <div className="col-xl-4 col-lg-5 d-none">
+                            <div className="row gx-lg-0 h-100">
                                 <div className="col-xl-12 mt-lg-0 mt-4 h-100">
 
 

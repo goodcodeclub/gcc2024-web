@@ -45,9 +45,9 @@ export function Sidebar(props) {
     ]
     return <>
 
-        <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-2">
+        <h5 className="text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-2">
             Contact Us
-        </h4>
+        </h5>
 
         <p className="m-0 lh-sm mb-4 text-truncate">
             <i className="bi bi-envelope"></i>{" "}
@@ -62,9 +62,9 @@ export function Sidebar(props) {
         </p>
 
 
-        <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-2">
+        <h5 className="text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-2">
             Internal projects
-        </h4>
+        </h5>
 
         <div className="row gy-1 mb-4 align-items-center">
 
@@ -98,9 +98,9 @@ export function Sidebar(props) {
 
 
 
-        <h4 className="text-uppercase d-inline-flex bg-white text-primary lh-1 py-2 px-3 fw-normal m-0 mb-2">
+        <h5 className="text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-2">
             Latest blog
-        </h4>
+        </h5>
 
         <div className="mb-0 reveal2 pb-4">
             {structuredClone(props.list).map((po, pi) => {
