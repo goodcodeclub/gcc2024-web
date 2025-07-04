@@ -61,7 +61,7 @@ export default function Page() {
             <div className="px-lg-0 px-3">
                 <div className="container">
                     <div className="row gx-lg-0 align-items-stretch justify-content-center">
-                        <div className="col-xl-8 col-lg-7">
+                        <div className="col-xl-8 col-lg-10">
 
                             <h5 className="text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-3">
                                 Featured Stories

@@ -8,7 +8,12 @@ export default function Nav() {
         {
             name: "Home",
             path: "/",
+            class: "d-xl-block d-none"
         },
+        {
+            name: "Services",
+            path: "/services",
+        },        
         {
             name: "Work",
             path: "/work",
@@ -29,16 +34,17 @@ export default function Nav() {
     return <>
 
 
-        <div className="sticky-top bg-dark1 border-muted px-lg-0 px-3 pt-4 pb-4 bg-white" style={{
+        <div className="sticky-top bg-dark1 border-muted px-lg-0 px-3 pt-4 pb-4 " style={{
             top: 0,
             left: 0,
-            zIndex: 1030
+            zIndex: 1030,
+            backgroundColor:"rgba(255,255,255,0.95)",
         }}>
 
             <div className="container bg-transparent ">
                 <div className="row justify-content-center">
 
-                    <div className="col-xl-8 col-lg-7 d-flex align-items-center">
+                    <div className="col-xl-8 col-lg-10 d-flex align-items-center">
 
                         <Link className="active text-dark d-flex justify-content-center align-items-center text-decoration-none" href="/">
                             {/* <img src="/images/gcc.png" style={{height:"2rem"}} className="me-3" /> */}
@@ -54,7 +60,7 @@ export default function Nav() {
 
                             {links.map((lo, li) => {
                                 return <>
-                                    <Link href={lo.path} className={"text-decoration-none d-lg-block d-none1 px-0 mx-0 me-0 me-md-3 me-sm-2 me-2 " + ((pathname == lo.path || (lo.path.length > 1 && pathname.indexOf(lo.path) === 0)) ? "border-bottom1 border-21 opacity-100" : "opacity-50")}>{lo.name}</Link>
+                                    <Link href={lo.path} className={lo.class + " text-decoration-none d-lg-block d-none1 px-0 mx-0 me-0 me-md-3 me-sm-2 me-2 " + ((pathname == lo.path || (lo.path.length > 1 && pathname.indexOf(lo.path) === 0)) ? "border-bottom1 border-21 opacity-100" : "opacity-50")}>{lo.name}</Link>
                                 </>
                             })}
 
