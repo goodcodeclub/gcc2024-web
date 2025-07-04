@@ -301,8 +301,8 @@ export default function Page() {
                                     {types.map((type, index) => (
                                         <div className="col-lg-12 col-12" key={index}>
 
-                                            <div className="d-flex">
-                                                <img src={type.image} alt="" className="opacity-25" style={{
+                                            <div className="d-flex align-items-start">
+                                                <img src={type.image} alt="" className="opacity-25 mt-2" style={{
                                                     width: "3rem"
                                                 }} />
 
