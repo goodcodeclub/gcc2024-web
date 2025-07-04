@@ -346,7 +346,7 @@ export default function Page() {
                                                 </div>
 
                                                 <div className="p-0">
-                                                    <h5 className="m-0 mb-1">{column.title}</h5>
+                                                    <h5 className="m-0 mb-0">{column.title}</h5>
                                                     <p className="m-0 mb-2">{column.summary}</p>
 
                                                     {/* <hr className="m-0 my-2" /> */}
