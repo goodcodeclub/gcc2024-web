@@ -75,7 +75,7 @@ export default function Page() {
             className="my-auto0 pb-4 font-neodgm1 text-uppercase1"
             ref={refToComponent}
         >
-                <Nav />
+            <Nav />
 
             <div className="px-lg-0 px-3">
                 <div className="container">
@@ -102,10 +102,17 @@ export default function Page() {
                                     222 Finch Ave W Suite 105, North York, ON M2R 1M6
                                 </a>
                                 <br />
+                                <i className="bi bi-telephone"></i>{" "}
+
+                                <a href="tel:+16476370155">
+                                    +1 647 637 0155
+                                </a>
+
+                                <br />
                                 <i className="bi bi-linkedin"></i>{" "}
                                 <a href="https://www.linkedin.com/company/goodcodeclub/" target="_blank">
                                     LinkedIn
-                                </a>                                
+                                </a>
                                 {/* <br />
                                 <i className="bi bi-calendar2"></i>{" "}
                                 <a href="https://chriskkim.youcanbook.me/" target="_blank">
@@ -122,7 +129,7 @@ export default function Page() {
                                     method: 'POST',
                                     headers: { 'content-type': 'application/json' },
                                     body: JSON.stringify({
-                                        "title": "Contact form submission: "+ new Date().toISOString(),
+                                        "title": "Contact form submission: " + new Date().toISOString(),
                                         "content": JSON.stringify(form),
                                         "project_uuid": "58f7f50b-eac1-4c9f-b7fa-d44b8c37c173",
                                         "metadata": stringify(form),
