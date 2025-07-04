@@ -165,7 +165,7 @@ export default function Page() {
 
     const projects = [
         {
-            title: "Web Development Program",
+            title: "Web Standards",
             org: "George Brown College",
             funder: "the Government of Ontario",
             icon: "globe",
@@ -183,13 +183,13 @@ export default function Page() {
             icon: "mortarboard-fill",
         },
         {
-            title: "Visual Storytelling Platform",
+            title: "Visual Storytelling",
             org: "SRI International",
             funder: "DARPA",
             icon: "chat-left-dots-fill",
         },
         {
-            title: "Cultural Content Analysis",
+            title: "Content Analysis",
             org: "OCAD University",
             funder: "Magnify Digital and TELUS Fund",
             icon: "camera-video-fill",
@@ -306,7 +306,7 @@ export default function Page() {
                                                     width: "3rem"
                                                 }} />
 
-                                                <div className="ms-4">
+                                                <div className="ms-3">
                                                     <h3 className="fw-bold">{type.title}</h3>
                                                     <p className="m-0">{type.body}</p>
                                                 </div>
@@ -384,11 +384,11 @@ export default function Page() {
                                                 <div className="col-lg-4 col-12" key={index}>
                                                     <div className="row align-items-start 1text-center">
 
-                                                        <div className="">
+                                                        <div className="d-lg-block1 d-flex align-items-center">
 
                                                             <i className={"fs-3 bi bi-" + item.icon}></i>
 
-                                                            <h6 className="m-0 mb-1">{item.title}</h6>
+                                                            <h6 className="m-0 ms-lg-3 ms-2">{item.title}</h6>
                                                             {/* <p className="m-0 text-muted">{item.org}</p> */}
                                                             {/* {item.funder && (
                                                                 <p className="m-0 mt-1 d-lg-block d-none small text-muted lh-sm">
