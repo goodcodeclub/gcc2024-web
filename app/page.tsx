@@ -214,7 +214,7 @@ export default function Page() {
       image: "../../htmlcats.svg",
       url: "https://htmlcats.com",
       name: "HTMLCATS",
-      description: "Free web development tutorials"
+      description: "Web development tutorials"
     },
     {
       image: "../../flexbox.svg",
@@ -244,8 +244,8 @@ export default function Page() {
       image: "../../tinyartificial.svg",
       url: "https://tinyartificial.com/",
       name: "TinyArtificial",
-      description: "Easy-to-use AI agents for websites"
-    },    
+      description: "AI agents for websites"
+    },
     // {
     //     image: "../../uptimetrace.svg",
     //     url: "#",
