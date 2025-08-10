@@ -316,6 +316,48 @@ export default function Page() {
 
                   <div className="col-xl-12">
 
+
+                    <h5 className="text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-3">
+                      Founder + Lead Developer
+                    </h5>
+
+                    <div className="d-flex1 align-items-start mb-4">
+
+
+                      <img src="/profile.jpg" className="d-block float-end opacity-100 rounded-circle ms-2 mb-2" style={{
+                        width: "5rem",
+                        filter: "saturate(0)"
+                      }} />
+
+                      <div>
+
+                        <p className="m-0 mb-2">
+                          Chris K. Kim, PhD is a user-focused software developer in pursuit of using technology to facilitate interdisciplinary collaborations and address today's talent gap in digital media.
+                        </p>
+
+                        <p className="small mb-2 opacity-50">
+                          Trained in media production and information visualization, Chris works with institutional stakeholders, including University of Toronto, DARPA, and MIT, to build platforms that democratize AI and promote human-in-the-loop automation.
+                        </p>
+                        <p className="small mb-2 opacity-50">
+
+Chris also operates a software studio GoodCodeClub, where he works with emerging talents in promoting underserved communities and facilitating youth entrepreneurship.
+                        </p>
+
+                        <div className="m-0 d-flex">
+                          <a href="https://chriskkim.com" target="_blank" className="me-1"><i className="bi bi-globe"></i></a>
+                          <a href="http://ca.linkedin.com/pub/chris-kim/12/a52/8b9/" target="_blank" className=""><i className="bi bi-linkedin"></i></a>
+                        </div>
+
+                      </div>
+
+
+
+
+
+                    </div>
+
+
+
                     <h5 className="text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-3">
                       Original Projects
                     </h5>
@@ -461,27 +503,27 @@ export default function Page() {
 
                     <div className="mb-4 reveal2 row gy-md-0 gy-1">
 
-                    {projects.map((po, pi) => {
-                      return (
-                        <div className="d-md-flex align-items-center lh-sm col-12" key={pi}>
-                          <a
-                            href={po.url}
-                            target="_blank"
-                            className="d-block1"
-                            style={{ whiteSpace: "nowrap" }}
-                          >
-                            {po.name}
-                          </a>
+                      {projects.map((po, pi) => {
+                        return (
+                          <div className="d-md-flex align-items-center lh-sm col-12" key={pi}>
+                            <a
+                              href={po.url}
+                              target="_blank"
+                              className="d-block1"
+                              style={{ whiteSpace: "nowrap" }}
+                            >
+                              {po.name}
+                            </a>
                             <hr className="border-dark border border-bottom-0 border-1 m-0 mx-2 w-100 opacity-25 d-md-block d-none" />
-                          <p
-                            className="m-0  ms-auto opacity-50 fw-light small d-sm-block"
-                            style={{ whiteSpace: "nowrap" }}
-                          >
-                            {po.role}
-                          </p>
-                        </div>
-                      );
-                    })}
+                            <p
+                              className="m-0  ms-auto opacity-50 fw-light small d-sm-block"
+                              style={{ whiteSpace: "nowrap" }}
+                            >
+                              {po.role}
+                            </p>
+                          </div>
+                        );
+                      })}
 
                     </div>
 
