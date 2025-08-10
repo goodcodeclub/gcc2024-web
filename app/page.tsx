@@ -240,6 +240,12 @@ export default function Page() {
       name: "NextFirstSteps",
       description: "Recruitment and upskilling support"
     },
+    {
+      image: "../../tinyartificial.svg",
+      url: "https://tinyartificial.com/",
+      name: "TinyArtificial",
+      description: "Easy-to-use AI agents for websites"
+    },    
     // {
     //     image: "../../uptimetrace.svg",
     //     url: "#",
