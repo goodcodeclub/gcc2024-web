@@ -18,10 +18,10 @@ export default function Nav() {
             name: "Work",
             path: "/work",
         },
-        {
-            name: "Blog",
-            path: "/blog",
-        },
+        // {
+        //     name: "Blog",
+        //     path: "/blog",
+        // },
 
         {
             name: "Contact",
