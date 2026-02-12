@@ -5,7 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap-icons/font/bootstrap-icons.min.css";
 import './global.css';
 import { usePathname } from "next/navigation";
-
+import { Raleway } from "next/font/google";
+const raleway = Raleway({ subsets: ["latin"] });
 
 const gaTag = `
 window.dataLayer = window.dataLayer || [];
@@ -104,7 +105,7 @@ export default function RootLayout({
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LYZDGJWZ8G"></script>
                 <script dangerouslySetInnerHTML={{ __html: gaTag }}></script>
             </head>
-            <body className=" bg-dark1 text-white1 d-flex flex-column" style={{}}>
+            <body className={`${raleway.className} bg-dark1 text-white1 d-flex flex-column`} style={{}}>
                 {/* <iframe src="https://threejs.org/examples/webgl_effects_ascii.html" className="position-fixed w-100 h-100 pe-none" style={{
                     left: 0,
                     top: 0,

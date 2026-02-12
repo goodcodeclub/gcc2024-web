@@ -294,7 +294,7 @@ export default function Page() {
                             <>
 
 
-                                <h5 className="text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-3">
+                                <h5 className="fw-bold text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-3">
                                     Target Customers
                                 </h5>
                                 <div className="row gy-3 mb-4">
@@ -324,7 +324,7 @@ export default function Page() {
 
 
 
-                                <h5 className="text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-3">
+                                <h5 className="fw-bold text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-3">
                                     Service Offerings
                                 </h5>
                                 <div className="row text-white1 gx-4 gy-4 mb-4">
@@ -346,7 +346,7 @@ export default function Page() {
                                                 </div>
 
                                                 <div className="p-0">
-                                                    <h5 className="m-0 mb-0">{column.title}</h5>
+                                                    <h5 className="fw-bold m-0 mb-0">{column.title}</h5>
                                                     <p className="m-0 mb-2">{column.summary}</p>
 
                                                     {/* <hr className="m-0 my-2" /> */}
@@ -376,7 +376,7 @@ export default function Page() {
                                     <div className="col-12">
 
 
-                                        <h5 className="text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-2">
+                                        <h5 className="fw-bold text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-2">
                                             Research Areas
                                         </h5>
                                         <div className="row bg-transparent mb-4 gy-2">
@@ -411,7 +411,7 @@ export default function Page() {
                             <>
 
 
-                                <h5 className="text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-2">
+                                <h5 className="fw-bold text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-2">
                                     Collaborators
                                 </h5>
                                 <div className="mb-4 reveal2 row gy-md-0 gy-1">

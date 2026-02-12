@@ -273,7 +273,7 @@ export default function Page() {
             <div className="row gx-lg-0 align-items-stretch justify-content-center">
               <div className="col-xl-8 col-lg-7">
                 <div className="mb-xl-4 mb-4 reveal2">
-                  {/* <h5 className="text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-2">
+                  {/* <h5 className="fw-bold text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-2">
                     About us
                   </h5> */}
 
@@ -317,7 +317,7 @@ export default function Page() {
                   <div className="col-xl-12">
 
 
-                    <h5 className="text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-3">
+                    <h5 className="fw-bold text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-3">
                       Founder + Lead Developer
                     </h5>
 
@@ -358,7 +358,7 @@ Chris also operates a software studio GoodCodeClub, where he works with emerging
 
 
 
-                    <h5 className="text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-3">
+                    <h5 className="fw-bold text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-3">
                       Original Projects
                     </h5>
 
@@ -376,7 +376,7 @@ Chris also operates a software studio GoodCodeClub, where he works with emerging
 
                               <div className="w-100 ms-2 text-truncate overflow-hidden">
 
-                                <h5 className="fw-normal m-0 text-decoration-none d-flex align-items-center">
+                                <h5 className="fw-bold fw-normal m-0 text-decoration-none d-flex align-items-center">
                                   {io.name}
                                 </h5>
                                 <p
@@ -399,7 +399,7 @@ Chris also operates a software studio GoodCodeClub, where he works with emerging
                     </div>
 
 
-                    <h5 className="text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-3">
+                    <h5 className="fw-bold text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-3">
                       Featured Stories
                     </h5>
 
@@ -463,7 +463,7 @@ Chris also operates a software studio GoodCodeClub, where he works with emerging
                       })}
                     </div>
 
-                    <h5 className="text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-2">
+                    <h5 className="fw-bold text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-2">
                       Services
                     </h5>
                     <div className="mb-4 reveal2 row gy-md-0 gy-1">
@@ -497,7 +497,7 @@ Chris also operates a software studio GoodCodeClub, where he works with emerging
 
 
 
-                    <h5 className="text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-2">
+                    <h5 className="fw-bold text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-2">
                       Collaborators
                     </h5>
 

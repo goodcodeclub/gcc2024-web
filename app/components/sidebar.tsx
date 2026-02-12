@@ -45,7 +45,7 @@ export function Sidebar(props) {
     ]
     return <>
 
-        <h5 className="text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-2">
+        <h5 className="fw-bold text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-2">
             Contact Us
         </h5>
 
@@ -62,7 +62,7 @@ export function Sidebar(props) {
         </p>
 
 
-        <h5 className="text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-2">
+        <h5 className="fw-bold text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-2">
             Internal projects
         </h5>
 
@@ -98,7 +98,7 @@ export function Sidebar(props) {
 
 
 
-        <h5 className="text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-2">
+        <h5 className="fw-bold text-uppercase d-inline-flex bg-dark text-white lh-1 py-2 px-2 fw-normal m-0 mb-2">
             Latest blog
         </h5>
 

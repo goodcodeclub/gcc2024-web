@@ -48,10 +48,10 @@ export default function Nav() {
 
                         <Link className="active text-dark d-flex justify-content-center align-items-center text-decoration-none" href="/">
                             {/* <img src="/images/gcc.png" style={{height:"2rem"}} className="me-3" /> */}
-                            <img src='https://legacy.goodcodeclub.com/images/gcc.png' className="me-lg-3" style={{ height: "2rem", transformOrigin: "center", transform: "" }} />
+                            <img src='/gcc.png' className="me-lg-3" style={{ height: "2rem", transformOrigin: "center", transform: "" }} />
 
                             <div className="d-lg-block d-none">
-                                <h4 className="mb-0 fw-semibold lh-1 text-white1">GoodCodeClub</h4>
+                                <h4 className="mb-0 fw-bold lh-1 text-white1">GoodCodeClub</h4>
                             </div>
 
                         </Link>

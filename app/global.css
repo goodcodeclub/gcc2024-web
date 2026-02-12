@@ -1,5 +1,5 @@
-@import url('https://legacy.goodcodeclub.com/gcc2021/fonts/gotham.css');
-@import url('//cdn.jsdelivr.net/gh/neodgm/neodgm-webfont@latest/neodgm/style.css');
+/* @import url('https://legacy.goodcodeclub.com/gcc2021/fonts/gotham.css'); */
+/* @import url('//cdn.jsdelivr.net/gh/neodgm/neodgm-webfont@latest/neodgm/style.css'); */
 
 .font-neodgm {
     font-family: 'NeoDunggeunmo' !important;
@@ -20,7 +20,7 @@ html
 
 body {
     /* min-height: 100vh; */
-	font-family: "GothamPro" !important;
+	/* font-family: "GothamPro" !important; */
     overflow-y: scroll;
 }
 
