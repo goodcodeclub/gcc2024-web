@@ -6,7 +6,7 @@ import "bootstrap-icons/font/bootstrap-icons.min.css";
 import './global.css';
 import { usePathname } from "next/navigation";
 import { Raleway } from "next/font/google";
-const raleway = Raleway({ subsets: ["latin"] });
+const raleway = Raleway({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800"] });
 
 const gaTag = `
 window.dataLayer = window.dataLayer || [];

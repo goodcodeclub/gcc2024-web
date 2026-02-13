@@ -60,7 +60,7 @@ export default function Nav() {
 
                             {links.map((lo, li) => {
                                 return <>
-                                    <Link href={lo.path} className={lo.class + " text-decoration-none d-lg-block d-none1 px-0 mx-0 me-0 me-md-3 me-sm-2 me-2 " + ((pathname == lo.path || (lo.path.length > 1 && pathname.indexOf(lo.path) === 0)) ? "border-bottom1 border-21 opacity-100" : "opacity-50")}>{lo.name}</Link>
+                                    <Link href={lo.path} className={lo.class + "  text-decoration-none d-lg-block d-none1 px-0 mx-0 me-0 me-md-3 me-sm-2 me-2 " + ((pathname == lo.path || (lo.path.length > 1 && pathname.indexOf(lo.path) === 0)) ? "border-bottom1 border-21 opacity-100" : "opacity-50")}>{lo.name}</Link>
                                 </>
                             })}
 
